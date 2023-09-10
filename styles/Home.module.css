@@ -1,428 +1,152 @@
-.header {
+.main {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  padding: 25px 5%;
+  justify-content: center;
+  padding: 80px 40px;
 }
 
-.headerBtns {
-  display: flex;
-  align-items: center;
+.btnsSection {
+  margin: 50px;
 }
 
-.headerBtn,
-.headerBtn2 {
+.btn,
+.btnDisabled {
+  padding: 8px 25px;
+  border-radius: 50px;
+  background-color: #141c3a;
+  margin: 25px 10px;
+  text-align: center;
   font-family: "Alkatra-Regular";
   font-size: 18px;
-  color: #141c3a;
-  border-radius: 50px;
-  padding: 8px 15px;
-  margin: 0 15px;
+  color: white;
   transition: all 0.2s ease-in-out;
+  border: 1px solid #141c3a;
 }
-.headerBtn:hover,
-.headerBtn2 {
-  color: #6e07f3;
+.btn:hover {
+  color: #141c3a;
+  background-color: white;
   cursor: pointer;
 }
 
-.headerBtn2 {
-  border: 2px solid #6e07f3;
-  color: #6e07f3;
-  background-color: transparent;
+.btnDisabled {
+  background-color: #dddddd;
+  color: #666666;
+  border: 1px solid #dddddd;
 }
-.headerBtn2:hover {
-  background-color: #6e07f3;
-  color: white;
-}
-
-.hero {
-  flex-grow: 1;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: column;
-  padding: 6rem 5%;
-  align-items: center;
+.btnDisabled:hover {
+  cursor: pointer;
 }
 
-.heroHeader {
+.form {
+  margin: 20px 0;
+}
+
+.formTitle {
   color: #141c3a;
-  font-family: "Alkatra-Bold";
-  font-size: 40px;
   text-align: center;
-  padding: 15px 0;
-  width: 70%;
-}
-.heroSubHeader {
-  color: rgba(10, 10, 10, 0.9);
   font-family: "Alkatra-Regular";
-  font-size: 20px;
-  text-align: center;
-  padding: 25px 0;
-  width: 70%;
-}
-.heroImage {
-  padding: 30px 0;
+  font-size: 24px;
+  margin: 10px 0 30px 0;
 }
 
-.section2 {
-  padding: 50px 5%;
+.textField {
+  margin: 10px auto;
+}
+
+.errorText {
+  color: rgb(185, 18, 18);
+  font-family: "Alkatra-Regular";
+  font-size: 16px;
+}
+
+.loader {
+  color: darkgreen;
+  font-family: "Alkatra-Regular";
+  font-size: 16px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.userInfo {
+  padding: 0px 10px;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: #6e07f3;
-  padding-bottom: 200px;
 }
 
-.devAnimation {
-  width: 40%;
-}
-
-.bio {
-  width: 45%;
-}
-
-.bioHeader {
-  color: white;
-  font-family: "Alkatra-Bold";
-  font-size: 30px;
-  padding: 20px 0;
-  text-align: center;
-}
-
-.bioSubHeader {
-  color: white;
-  font-family: "Alkatra-Variable";
+.userName {
+  color: #141c3a;
+  font-family: "Alkatra-Regular";
   font-size: 18px;
-  padding: 20px 0;
-  text-align: center;
-  font-weight: 200;
 }
 
-.section4 {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 5%;
-  margin-top: -150px;
+.userRoll {
+  color: #243165;
+  font-family: "Alkatra-Regular";
+  font-size: 14px;
+  margin-top: -10px;
+}
+
+.company {
+  box-shadow: 2px 2px 5px #aaaaaa;
   background-color: white;
   border-radius: 25px;
-  border: 1px solid #e6ecf8;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 15px 10px;
 }
 
-.kns {
-  padding: 25px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 33.33%;
-}
-
-.knIcon {
-  background-color: rgb(255, 142, 58);
-  border-radius: 10px;
-  padding: 15px;
-  margin: 25px 0;
-}
-
-.knsHeader {
-  font-family: "Alkatra-Variable";
-  font-weight: 600;
-  font-size: 26px;
-  padding: 25px 0 35px 0;
-  text-align: center;
-  color: #141c3a;
-}
-
-.knsDesc {
-  font-family: "Alkatra-Variable";
-  font-weight: 200;
-  font-size: 18px;
-  padding: 15px;
-  text-align: center;
-  color: #141c3a;
-  height: 180px;
-}
-
-.knsL {
-  padding: 15px 0;
-}
-
-.knsLHeader {
-  color: #6e07f3;
-  font-family: "Alkatra-Variable";
-  font-weight: 200;
-  font-size: 18px;
-  padding: 15px;
-  text-align: center;
-}
-
-.dlvK {
-  color: #141c3a;
-  font-family: "Alkatra-Variable";
-  font-weight: 200;
-  font-size: 18px;
-  text-align: center;
-}
-
-.section5 {
-  margin: 150px 5%;
-  display: "flex";
-  flex-direction: "column";
-  align-items: "center";
-}
-
-.pjHeader,
-.pjDesc {
-  color: #141c3a;
-  font-family: "Alkatra-Variable";
-  font-weight: 600;
-  font-size: 30px;
-  text-align: center;
-}
-
-.pjDesc {
-  font-weight: 200;
-  font-size: 20px;
-}
-
-.prContainer {
-  position: relative;
-  overflow: hidden;
-  height: 260px;
-  width: 100%;
-  border-radius: 12px;
-}
-
-.prContent {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: opacity 0.45s ease;
-  color: white;
-  background-color: #141c3a;
-  height: 100%;
-  width: 100%;
-  padding: 10%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.prContainer img {
-  width: 100%;
-  height: auto;
-  transition: transform 0.3s;
-}
-
-.prContainer:hover img {
-  transform: scale(1.2);
-}
-
-.prContainer:hover .prContent {
-  opacity: 1;
-}
-
-.prContentText {
-  font-family: "Alkatra-Variable";
-  font-weight: 200;
-  font-size: 20px;
-  text-align: center;
-  margin-bottom: 25px;
-}
-
-.prContentBtn {
-  padding: 15px 35px;
-  border: 1px solid #6e07f3;
-  background-color: transparent;
-  border-radius: 50px;
-  color: white;
-  font-family: "Alkatra-Variable";
-  font-size: 16px;
-  font-weight: 200;
-  transition: all 0.2s ease-in-out;
-}
-
-.prContentBtn:hover {
-  background-color: #6e07f3;
-  cursor: pointer;
-}
-
-.projectGrid {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  gap: 25px;
-  margin: 100px 0;
-}
-
-.testimonialContainer {
-  padding: 100px 25%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.testimonialImage {
-  width: 100px;
-  height: 100px;
-  border-radius: 100px;
-  overflow: hidden;
-}
-
-.testimonialText {
-  font-family: "Alkatra-Variable";
-  font-size: 24px;
-  font-weight: 200;
-  text-align: center;
-  margin: 30px 0;
-  padding: 30px 0;
-  color: #141c3a;
-}
-
-.testimonialAuthor {
-  font-family: "Alkatra-Variable";
-  font-size: 20px;
-  font-weight: 600;
-  text-align: center;
-}
-
-.taDesignation {
-  font-family: "Alkatra-Variable";
-  font-size: 18px;
-  font-weight: 200;
-  text-align: center;
-}
-
-.footerHead {
-  margin: 100px 5% 0;
-  z-index: 10;
-  padding: 50px 80px;
-  background-color: #141c3a;
+.rdContainer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px #141c3a;
-  border-radius: 12px;
+  margin: 20px 0;
 }
 
-.fhH1 {
-  color: white;
-  font-family: "Alkatra-Variable";
-  font-size: 30px;
-  font-weight: 800;
-  width: 30%;
-}
-
-.fhH2Cont {
-  width: 30%;
+.rdInnerContainer1,
+.rdInnerContainer2 {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
 }
 
-.fhH2 {
-  color: white;
-  font-family: "Alkatra-Variable";
-  font-size: 18px;
-  font-weight: 200;
-  width: 250px;
-  text-align: center;
+.rdInnerContainer2 {
+  align-items: flex-end;
 }
 
-.fhBtnCont {
-  width: 30%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-.fhBtn {
-  color: white;
-  padding: 10px 50px;
-  border: 1px solid #5be9b9;
-  background-color: transparent;
-  border-radius: 50px;
-  font-family: "Alkatra-Variable";
-  font-size: 20px;
-  font-weight: 200;
-  transition: all 0.2s ease-in-out;
-}
-.fhBtn:hover {
-  cursor: pointer;
-  background-color: #5be9b9;
+.companyName {
   color: #141c3a;
-}
-
-.footerTop {
-  background-color: #6e07f3;
-  margin-top: -100px;
-  height: 100px;
-  width: 100%;
-  z-index: -1;
-  position: relative;
-}
-.footer {
-  background-color: #6e07f3;
-  padding: 100px 5% 50px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.footerInnerContainer {
-  z-index: 11;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.footerLogo {
-  z-index: 10;
-}
-.footerLogo:hover {
-  cursor: pointer;
-}
-
-.footerSlogan {
-  color: white;
-  margin: 50px 0;
-  width: 300px;
-  text-align: center;
   font-family: "Alkatra-Regular";
-  font-size: 24px;
-  font-weight: lighter;
-}
-
-.footerIcon {
-  background-color: transparent;
-  border: 1px solid white;
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.2s ease-in-out;
-}
-.footerIcon:hover {
-  background-color: white;
-  cursor: pointer;
-}
-
-.fH3 {
-  color: white;
-  margin-top: 50px;
-  font-family: "Alkatra-Variable";
   font-size: 18px;
-  font-weight: lighter;
-  text-align: center;
 }
 
-/* rgb(255, 142, 58) */
+.companyProfile {
+  color: #243165;
+  font-family: "Alkatra-Regular";
+  font-size: 15px;
+  margin: 15px 0;
+}
 
-@media (max-width: 800px) {
+.rdTitle {
+  color: #6e07f3;
+  font-family: "Alkatra-Regular";
+  font-size: 15px;
+}
+
+.rd {
+  color: #243165;
+  font-family: "Alkatra-Bold";
+  font-size: 16px;
+}
+
+.backArrow {
+  width: 70%;
+  margin-bottom: 20px;
+}
+
+.desc {
+  color: #141c3a;
+  font-family: "Alkatra-Regular";
+  font-size: 16px;
 }
